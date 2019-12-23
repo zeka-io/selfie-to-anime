@@ -3,8 +3,7 @@ from tensorflow.contrib import slim
 import cv2
 import os, random
 import numpy as np
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-const = 30
+
 class ImageData:
 
     def __init__(self, load_size, channels, augment_flag):
@@ -29,19 +28,10 @@ class ImageData:
 def load_test_data(image_path, size=256):
     img = cv2.imread(image_path, flags=cv2.IMREAD_COLOR)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
     img = cv2.resize(img, dsize=(size, size))
+
     img = np.expand_dims(img, axis=0)
-    faces = face_cascade.detectMultiScale(img, 1.3, 5)
-    for (x, y, w, h) in faces:
-        x = x - const
-        y = y - const
-        yatay = x + w + (const * 2)
-        dikey = y + h + (const * 2)
-        if x < 0: x = 0
-        if y < 0: y = 0
-        if yatay > 256: yatay = 256
-        if dikey > 256: dikey = 256
-        img = img[y:dikey, x:yatay]
     img = img/127.5 - 1
 
     return img

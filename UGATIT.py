@@ -635,6 +635,7 @@ class UGATIT(object) :
 
         for sample_file  in test_A_files : # A -> B
             print('Processing A image: ' + sample_file)
+            sample_file = cv2.resize(sample_file,(256,256))
             sample_image = np.asarray(load_test_data(sample_file, size=self.img_size))
             image_path = os.path.join(self.result_dir,'{0}'.format(os.path.basename(sample_file)))
 
