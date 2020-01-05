@@ -105,5 +105,5 @@ If you find this code useful for your research, please cite our paper:
 ```
 
 
-
+### References
 Project is forked from [UGATIT](https://github.com/taki0112/UGATIT), Official Tensorflow implementation of U-GAT-IT
