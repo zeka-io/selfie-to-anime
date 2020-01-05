@@ -104,5 +104,6 @@ If you find this code useful for your research, please cite our paper:
 }
 ```
 
-## Author
-[Junho Kim](http://bit.ly/jhkim_ai), Minjae Kim, Hyeonwoo Kang, Kwanghee Lee
+
+
+Project is forked from [UGATIT](https://github.com/taki0112/UGATIT), Official Tensorflow implementation of U-GAT-IT
