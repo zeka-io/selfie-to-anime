@@ -19,7 +19,7 @@ The results of the paper came from the **Tensorflow code**
 * tensorflow == 1.14
 
 ## Pretrained model
-> We released 50 epoch and 100 epoch checkpoints so that people could test more widely.
+> 50 epoch and 100 epoch checkpoints had been released, so that people could test more widely.
 * [selfie2anime checkpoint (50 epoch)](https://drive.google.com/file/d/1V6GbSItG3HZKv3quYs7AP0rr1kOCT3QO/view?usp=sharing)
 * [selfie2anime checkpoint (100 epoch)](https://drive.google.com/file/d/19xQK2onIy-3S5W5K-XIh85pAg_RNvBVf/view?usp=sharing)
 
@@ -27,8 +27,7 @@ The results of the paper came from the **Tensorflow code**
 * [selfie2anime dataset](https://drive.google.com/file/d/1xOWj1UVgp6NKMT3HbPhBbtq2A4EDkghF/view?usp=sharing)
 
 ## Web page
-* [Selfie2Anime](https://selfie2anime.com) by [Nathan Glover](https://github.com/t04glovern)
-* [Selfie2Waifu](https://waifu.lofiu.com) by [creke](https://github.com/creke)
+* [Selfie2Anime](http://.....)
 
 ## Usage
 ```
@@ -93,7 +92,7 @@ The results of the paper came from the **Tensorflow code**
 </div>
 
 ## Citation
-If you find this code useful for your research, please cite our paper:
+If you find this code useful for your research, please cite the paper:
 
 ```
 @article{kim2019u,
